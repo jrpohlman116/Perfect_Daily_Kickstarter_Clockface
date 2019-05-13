@@ -6,7 +6,7 @@ import * as messaging from "messaging";
 import { display } from "display";
 import { me as appbit } from "appbit";
 import { today } from "user-activity";
-import { preferences } from "user-settings";
+import { preferences, units } from "user-settings";
 
 const heartImage = document.getElementById("hrm-img");
 const separator = document.getElementById("separator");
@@ -75,7 +75,12 @@ background.onclick = function(evt) {
     case 'assets/activities/calories.png':
       activityImage.href = 'assets/activities/distance.png';
       if (appbit.permissions.granted("access_activity")) {
-        activityData.text = Math.round((today.adjusted.distance*0.000621371192) * 100) / 100;
+        if (units.distance === 'us'){
+          activityData.text = Math.round((today.adjusted.distance*0.000621371192) * 100) / 100;
+        }else{
+          activityData.text = today.adjusted.distance;
+        }
+        
       }
       break;
     case 'assets/activities/distance.png':
