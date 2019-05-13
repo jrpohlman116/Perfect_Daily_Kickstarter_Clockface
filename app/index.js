@@ -17,7 +17,6 @@ display.addEventListener("change", () => {
 });
 
 document.getElementById("activity-data").text = today.adjusted.steps;
-console.log(preferences.clockDisplay);
 
 
 /************** Date/Time ******************************/
@@ -66,7 +65,6 @@ const activityImage = document.getElementById("activity-img");
 const activityData = document.getElementById("activity-data");
 
 background.onclick = function(evt) { 
-  
   switch (activityImage.href){
     case 'assets/activities/steps.png':
       activityImage.href = 'assets/activities/calories.png';
@@ -77,7 +75,7 @@ background.onclick = function(evt) {
     case 'assets/activities/calories.png':
       activityImage.href = 'assets/activities/distance.png';
       if (appbit.permissions.granted("access_activity")) {
-        activityData.text = today.adjusted.distance;
+        activityData.text = Math.round((today.adjusted.distance*0.000621371192) * 100) / 100;
       }
       break;
     case 'assets/activities/distance.png':
@@ -99,7 +97,6 @@ background.onclick = function(evt) {
       }
       break;
     default:
-      console.log(activityImage.href);
       break;
   }
 }
@@ -110,9 +107,7 @@ const weatherData = document.getElementById("weather-data");
 
 // Request weather data from the companion
 function fetchWeather() {
-  console.log('Fetch')
   if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
-    console.log('Socket Open')
     // Send a command to the companion
     messaging.peerSocket.send({
       command: 'weather'
