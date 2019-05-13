@@ -17,4 +17,10 @@ The icons are taken from [FlatIcon](https://www.flaticon.com/packs/weather-icons
 | Thunderstorm  | ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/weather/thunderstorm.png)  |
 | Default  | ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/weather/mist.png)  |
 
-![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/weather/clearsky-day.png)
+This design has five different color choices.
+
+| Color  | Options |
+| ------------- | ------------- |
+| ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/screenshots/black-bkg-1.png) | ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/screenshots/black-bkg-2.png) |
+| ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/screenshots/blue-bkg.png) | ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/screenshots/white-bkg.png) |
+| ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/screenshots/green-bkg.png) | ![alt text](https://github.com/jrpohlman116/Perfect_Daily_Kickstarter_Clockface/blob/master/resources/assets/screenshots/plum-bkg.png) |
