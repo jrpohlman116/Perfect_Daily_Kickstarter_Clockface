@@ -1,0 +1,27 @@
+{
+  "fitbit": {
+    "appUUID": "3fd00d3d-2982-4e25-87e2-1f3742e9d793",
+    "appType": "clockface",
+    "appDisplayName": "Perfect_Daily_Kickstarter",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity",
+      "access_location",
+      "access_internet"
+    ],
+    "buildTargets": [
+      "higgs"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Perfect_Daily_Kickstarter"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0"
+  }
+}
